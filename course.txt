@@ -1,0 +1,9 @@
+Made a Calculator with Javascript 
+Learned about variables and Constant
+Quiz Question
+
+
+{Data Types}
+can use back tick to embed dynamic Data
+
+
