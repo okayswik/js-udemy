@@ -9,7 +9,7 @@ let chosenMaxLife = parseInt(enteredValue);
 if (isNAN()(chosenMaxLife) || chosenMaxLife <= 0) {
   chosenMaxLife = 100;
 }
-let currentMonsterHealth = chosenMaxLife;
+let currentMonsterHealth = chosenMaxLifee;
 let currentPlayerHealth = chosenMaxLife;
 let hasBonusLife = true;
 
