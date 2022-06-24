@@ -1,36 +1,21 @@
-const sayHello = (name) => console.log("Hi " + name);
+const task1El1 = document.getElementById("task-1");
 
-sayHello(`swik`);
+const task1El2 = document.querySelector("#task-1");
 
-// task 3
+task1El1.style.color = "white";
 
-const sayHello2 = (name, phrase) => console.log(phrase + "" + name);
-const sayHello3 = () => console.log("Hi hardcode");
-const sayHello4 = (name) => "Hi " + name;
+task1El2.style.backgroundColor = "black";
 
-sayHello("swik");
-sayHello2("hello", "Cutie");
-sayHello3();
-console.log(sayHello4("swik"));
+const docTitle1 = document.querySelector("title");
 
-const sayHello5 = (name, phrase = "Hey") => console.log(phrase + "" + name);
+docTitle1.textContent = "Assignment-solved!";
 
-sayHello5("Baby");
-sayHello5("Baby", "Lovely");
+const docHead = document.head;
 
-function checkInput(cb, ...strings) {
-  let hasEmptyText = false;
-  for (const text of strings) {
-    if (!text) {
-      hasEmptyText = true;
-      break;
-    }
-    if (!hasEmptyText) {
-      cb();
-    }
-  }
-}
+const docTitle2 = document.head.querySelector("Title");
 
-checkInput(() => {
-  console.log("all not empty");
-});
+docTitle2.textContent = "Assignment - solved!";
+
+const h1 = document.getElementsByTagName("h1");
+
+h1[0].textContent = "Assignment-Solved";
