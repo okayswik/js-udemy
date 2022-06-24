@@ -1,21 +1,40 @@
-const task3Element = document.getElementById("task-3");
+const randomNumber = Math.random(); // produces random number between 0 (including) and 1 (excluding)
 
-function hello() {
-  alert("hola");
+// if (randomNumber >= 0.7) {
+//   alert("greator equal to 0.7");
+// }
+
+const numbers = [1, 2, 3, 4, 5, 6];
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
 }
 
-function userName(name) {
-  alert("Hi" + name);
+for (const num of numbers) {
+  console.log("num");
 }
 
-function combine(str1, str2, str3) {
-  const combinedText = `${str1} ${str2} ${str3}`;
-  return combinedText;
+let counter = 0;
+
+while (counter < numbers.length) {
+  console.log(numbers[counter]);
+  counter++;
 }
 
-userName("swik");
+//for loop => backwards
 
-task3Element.addEventListener("click", hello);
+for (let i = numbers.length - 1; i >= 0; i++);
+{
+  console.log(numbers[i]);
+}
 
-const combineString = combine("hi", "hello", "swik");
-alert(combineString);
+const randomNumber2 = Math.random();
+console.log(randomNumber);
+console.log(randomNumber2);
+
+if (
+  (randomNumber > 0.7 && randomNumber2 > 0.7) ||
+  randomNumber <= 0.2 ||
+  randomNumber2 <= 0.2
+) {
+  alert("Greater than 0.7 or greater than 0.2");
+}
