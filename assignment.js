@@ -1,40 +1,36 @@
-const randomNumber = Math.random(); // produces random number between 0 (including) and 1 (excluding)
+const sayHello = (name) => console.log("Hi " + name);
 
-// if (randomNumber >= 0.7) {
-//   alert("greator equal to 0.7");
-// }
+sayHello(`swik`);
 
-const numbers = [1, 2, 3, 4, 5, 6];
-for (let i = 0; i < numbers.length; i++) {
-  console.log(numbers[i]);
+// task 3
+
+const sayHello2 = (name, phrase) => console.log(phrase + "" + name);
+const sayHello3 = () => console.log("Hi hardcode");
+const sayHello4 = (name) => "Hi " + name;
+
+sayHello("swik");
+sayHello2("hello", "Cutie");
+sayHello3();
+console.log(sayHello4("swik"));
+
+const sayHello5 = (name, phrase = "Hey") => console.log(phrase + "" + name);
+
+sayHello5("Baby");
+sayHello5("Baby", "Lovely");
+
+function checkInput(cb, ...strings) {
+  let hasEmptyText = false;
+  for (const text of strings) {
+    if (!text) {
+      hasEmptyText = true;
+      break;
+    }
+    if (!hasEmptyText) {
+      cb();
+    }
+  }
 }
 
-for (const num of numbers) {
-  console.log("num");
-}
-
-let counter = 0;
-
-while (counter < numbers.length) {
-  console.log(numbers[counter]);
-  counter++;
-}
-
-//for loop => backwards
-
-for (let i = numbers.length - 1; i >= 0; i++);
-{
-  console.log(numbers[i]);
-}
-
-const randomNumber2 = Math.random();
-console.log(randomNumber);
-console.log(randomNumber2);
-
-if (
-  (randomNumber > 0.7 && randomNumber2 > 0.7) ||
-  randomNumber <= 0.2 ||
-  randomNumber2 <= 0.2
-) {
-  alert("Greater than 0.7 or greater than 0.2");
-}
+checkInput(() => {
+  console.log("all not empty");
+});
