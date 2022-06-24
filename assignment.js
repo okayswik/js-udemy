@@ -1,11 +1,21 @@
-const userInput = 40;
-let result;
+const task3Element = document.getElementById("task-3");
 
-result = 18 + userInput;
+function hello() {
+  alert("hola");
+}
 
-result = result - 1;
-result = result * 22;
-result = result / 4;
+function userName(name) {
+  alert("Hi" + name);
+}
 
-alert(result);
-alert(userInput);
+function combine(str1, str2, str3) {
+  const combinedText = `${str1} ${str2} ${str3}`;
+  return combinedText;
+}
+
+userName("swik");
+
+task3Element.addEventListener("click", hello);
+
+const combineString = combine("hi", "hello", "swik");
+alert(combineString);
