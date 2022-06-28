@@ -1,0 +1,19 @@
+{
+  "name": "js-udemy",
+  "version": "1.0.0",
+  "description": "Node Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okayswik/js-udemy.git"
+  },
+  "author": "Swikriti Neupane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okayswik/js-udemy/issues"
+  },
+  "homepage": "https://github.com/okayswik/js-udemy#readme"
+}
