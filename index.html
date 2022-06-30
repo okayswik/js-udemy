@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Web Components</title>
     <style>
-      div {
-        border: 2px solid orange;
+      * {
+        box-sizing: border-box;
       }
 
-      uc-tooltip {
-        border: 1px solid blue;
-        padding: 0.15rem;
+      html {
+        --color-primary: #a4fcda;
+        font-family: sans-serif;
       }
     </style>
     <script src="tooltip.js"></script>
@@ -20,16 +20,12 @@
   </head>
   <body>
     <p>
-      <uc-tooltip
-        class="important"
-        text="Web Components is a set of standards."
-      >
+      <uc-tooltip class="important" text="Web Components is a set of standards.">
         <span class="highlight">Web Components</span>
       </uc-tooltip>
       are awesome!
     </p>
     <uc-tooltip></uc-tooltip>
-    <div>This does not get the web component styles!</div>
     <a is="uc-confirm-link" href="https://www.google.com">Google</a>
   </body>
 </html>
