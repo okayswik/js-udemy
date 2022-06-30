@@ -1,5 +1,5 @@
 References
 
-Javascript Algorithms
+Typescript
 
-trekhleb/javascript-algorithms
+npm install -g typescript
