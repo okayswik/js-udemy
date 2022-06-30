@@ -9,7 +9,7 @@ class InfoToggle extends HTMLElement {
                   display: none;
               }
           </style>
-          <button>Show</button>
+          <button>Click Me!</button>
           <p id="info-box">
               <slot></slot>
           </p>

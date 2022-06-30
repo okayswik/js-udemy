@@ -1,5 +1,5 @@
 Custom Web Components
 
-Html custom elements
+Assignment - 8
 
-connectedCallback access the DOM
+To Hide and Show components when button is triggered.
