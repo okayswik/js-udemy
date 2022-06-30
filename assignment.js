@@ -29,16 +29,16 @@ class Course {
   }
 }
 
-const jsCourse = new Course("Node ", 50, 44);
+const nodeCourse = new Course("Node ", 50, 44);
 const reactCourse = new Course("React.js", 50, 36);
 
-console.log(jsCourse);
+console.log(nodeCourse);
 console.log(reactCourse);
 
-console.log(jsCourse.calculateValue());
+console.log(nodeCourse.calculateValue());
 console.log(reactCourse.calculateValue());
 
-jsCourse.printSummary();
+nodeCourse.printSummary();
 reactCourse.printSummary();
 
 class PracticalCourse extends Course {
@@ -48,12 +48,7 @@ class PracticalCourse extends Course {
   }
 }
 
-const angularCourse = new PracticalCourse(
-  "Angular - The Complete Guide",
-  36,
-  50,
-  10
-);
+const angularCourse = new PracticalCourse("Angular", 36, 50, 10);
 
 console.log(angularCourse);
 angularCourse.printSummary();
@@ -64,14 +59,9 @@ class TheoreticalCourse extends Course {
   }
 }
 
-const flutterCourse = new TheoreticalCourse(
-  "Flutter - Build iOS and Android Apps",
-  50,
-  48
-);
+const expressCourse = new TheoreticalCourse("Express", 50, 48);
 
-flutterCourse.price = 5000;
-flutterCourse.#price = 100;
-
-flutterCourse.printSummary();
-flutterCourse.publish();
+expressCourse.price = 5000;
+expressCourse.#price = 100;
+expressCourse.printSummary();
+expressCourse.publish();
